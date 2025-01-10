@@ -1,0 +1,41 @@
+<div class="kanban-container">
+    <h1 class="title">TodoList</h1>
+    <div class="columns">
+      <!-- Colonne : À faire -->
+      <div class="column">
+        <h2>À faire</h2>
+        <div *ngFor="let task of todoList" class="task-card">
+          <label>
+            <input type="checkbox" [(ngModel)]="task.completed" />
+            <span [class.completed]="task.completed">{{ task.name }}</span>
+          </label>
+        </div>
+        <button (click)="addTask('todo')">Ajouter une tâche</button>
+      </div>
+  
+      <!-- Colonne : En cours -->
+      <div class="column">
+        <h2>En cours</h2>
+        <div *ngFor="let task of inProgressList" class="task-card">
+          <label>
+            <input type="checkbox" [(ngModel)]="task.completed" />
+            <span [class.completed]="task.completed">{{ task.name }}</span>
+          </label>
+        </div>
+        <button (click)="addTask('inProgress')">Ajouter une tâche</button>
+      </div>
+  
+      <!-- Colonne : Fini -->
+      <div class="column">
+        <h2>Fini</h2>
+        <div *ngFor="let task of doneList" class="task-card">
+          <label>
+            <input type="checkbox" [(ngModel)]="task.completed" />
+            <span [class.completed]="task.completed">{{ task.name }}</span>
+          </label>
+        </div>
+        <button (click)="addTask('done')">Ajouter une tâche</button>
+      </div>
+    </div>
+  </div>
+  
