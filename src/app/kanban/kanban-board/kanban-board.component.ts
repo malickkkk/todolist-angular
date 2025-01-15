@@ -15,7 +15,7 @@ export class KanbanBoardComponent {
   todoList = [
     { name: 'Préparer le planning de la semaine', completed: false },
     { name: 'Répondre aux emails importants', completed: false },
-    { name: 'Faire une revue de code', completed: false }
+    { name: 'Faire une revue de code', completed: false },
   ];
 
   inProgressList = [
@@ -40,5 +40,6 @@ export class KanbanBoardComponent {
         this.doneList.push(newTask);
       }
     }
-  }
+  };
+  Titre = "TodoList";
 }

@@ -1,0 +1,14 @@
+todolist\service\UserProjectService.class
+todolist\config\UserController.class
+todolist\App$HelloworldController.class
+todolist\config\FirestoreConfig.class
+todolist\App.class
+todolist\repository\ProjectRepository.class
+todolist\FirebaseInitializer.class
+todolist\model\FullUser.class
+todolist\config\ProjectController.class
+todolist\model\Owner.class
+todolist\model\Project.class
+todolist\model\User.class
+todolist\model\Task.class
+todolist\repository\FullUserRepository.class
